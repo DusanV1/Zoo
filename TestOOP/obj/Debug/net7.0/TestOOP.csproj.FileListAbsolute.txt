@@ -1,0 +1,15 @@
+/Users/dusan/Projects/TestOOP/TestOOP/bin/Debug/net7.0/TestOOP
+/Users/dusan/Projects/TestOOP/TestOOP/bin/Debug/net7.0/TestOOP.deps.json
+/Users/dusan/Projects/TestOOP/TestOOP/bin/Debug/net7.0/TestOOP.runtimeconfig.json
+/Users/dusan/Projects/TestOOP/TestOOP/bin/Debug/net7.0/TestOOP.dll
+/Users/dusan/Projects/TestOOP/TestOOP/bin/Debug/net7.0/TestOOP.pdb
+/Users/dusan/Projects/TestOOP/TestOOP/obj/Debug/net7.0/TestOOP.csproj.AssemblyReference.cache
+/Users/dusan/Projects/TestOOP/TestOOP/obj/Debug/net7.0/TestOOP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dusan/Projects/TestOOP/TestOOP/obj/Debug/net7.0/TestOOP.AssemblyInfoInputs.cache
+/Users/dusan/Projects/TestOOP/TestOOP/obj/Debug/net7.0/TestOOP.AssemblyInfo.cs
+/Users/dusan/Projects/TestOOP/TestOOP/obj/Debug/net7.0/TestOOP.csproj.CoreCompileInputs.cache
+/Users/dusan/Projects/TestOOP/TestOOP/obj/Debug/net7.0/TestOOP.dll
+/Users/dusan/Projects/TestOOP/TestOOP/obj/Debug/net7.0/refint/TestOOP.dll
+/Users/dusan/Projects/TestOOP/TestOOP/obj/Debug/net7.0/TestOOP.pdb
+/Users/dusan/Projects/TestOOP/TestOOP/obj/Debug/net7.0/TestOOP.genruntimeconfig.cache
+/Users/dusan/Projects/TestOOP/TestOOP/obj/Debug/net7.0/ref/TestOOP.dll
