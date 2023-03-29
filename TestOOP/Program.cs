@@ -20,7 +20,8 @@ class Program
             Console.WriteLine("\t3-ukoncit program");
 
             //inputMain = Convert.ToInt32(Console.ReadLine());
-            inputMain = Zoo.ReadLineCheckInt();
+            //inputMain = Zoo.ReadLineCheckInt();
+            inputMain = Zoo.ReadLineCheckNum<int>();
 
             switch(inputMain)
             {
@@ -37,7 +38,8 @@ class Program
                         Console.WriteLine("\t7-prejit do hlavniho menu");
 
                         //inputZamestnanci = Convert.ToInt32(Console.ReadLine());
-                        inputZamestnanci= Zoo.ReadLineCheckInt();
+                        //inputZamestnanci= Zoo.ReadLineCheckInt();
+                        inputZamestnanci=Zoo.ReadLineCheckNum<int>();
 
                         switch (inputZamestnanci)
                         {
@@ -87,9 +89,10 @@ class Program
                         //    Console.WriteLine("Spatne zadany vstup.");
 
                         //};
-                        inputZver = Zoo.ReadLineCheckInt();
+                        //inputZver = Zoo.ReadLineCheckInt();
+                        inputZver=Zoo.ReadLineCheckNum<int>();
 
-                        
+
                         //int index;
                         switch (inputZver)
                         {

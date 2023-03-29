@@ -77,7 +77,28 @@ namespace TestOOP
 
         }
 
-        
+        public static T ReadLineCheckNum<T>()
+        {
+            string input = ReadLineCheck();
+            T result=default;
+            bool passed = false;
+            do
+            {
+                try
+                {
+                    result= (T)Convert.ChangeType(input, typeof(T));
+                    passed = true;
+                }
+                catch
+                {
+                    Console.WriteLine("Spatne zadany vstup. Zadej znovu.");
+                    input = ReadLineCheck();
+                }
+            } while (passed == false);
+            return result;
+        }
+
+
 
         public void PridatZvire(string nazev,int vek, double vaha)
 		{
@@ -91,9 +112,11 @@ namespace TestOOP
             Console.WriteLine("Zadej nazev, vek a vahu zvirete.");
             string nazev = ReadLineCheck();
             //int vek = Convert.ToInt32(Console.ReadLine());  //podminka, aby to bylo dobre zadany
-            int vek = ReadLineCheckInt();
+            //int vek = ReadLineCheckInt();
+            int vek = ReadLineCheckNum<int>();
             //double vaha = Convert.ToDouble(Console.ReadLine());
-            double vaha = double.TryParse(ReadLineCheck(), out vaha) ? vaha : 0;
+            //double vaha = double.TryParse(ReadLineCheck(), out vaha) ? vaha : 0;
+            double vaha= ReadLineCheckNum<double>();
             //zvirata.Add(new Zvire(nazev, vek, vaha));
             PridatZvire(nazev, vek, vaha);
         }
@@ -108,7 +131,8 @@ namespace TestOOP
             VypisZvirat();
             Console.WriteLine("Vyber index zvirete kteryho chces smazat.");
             //int index = Convert.ToInt32(Console.ReadLine());
-            int index= ReadLineCheckInt();
+            //int index= ReadLineCheckInt();
+            int index= ReadLineCheckNum<int>();
             SmazatZvire(index - 1);
         }
 
@@ -135,7 +159,8 @@ namespace TestOOP
             Console.WriteLine("Data u ktereho zvirete chces zmenit. Vyber index");
             //int index = Convert.ToInt32(Console.ReadLine());
             //int index = int.TryParse(ReadLineCheck(), out index) ? index : 0;
-            int index = ReadLineCheckInt();
+            //int index = ReadLineCheckInt();
+            int index= ReadLineCheckNum<int>();
             Zvire zvire = VyberZvire(index);
             Console.WriteLine("Co chces upravit:");
             Console.WriteLine("\t1. nazev");
@@ -144,7 +169,8 @@ namespace TestOOP
 
             //int uprava = Convert.ToInt32(Console.ReadLine());
             //int uprava = int.TryParse(ReadLineCheck(), out uprava) ? uprava : 0;
-            int uprava= ReadLineCheckInt();
+            //int uprava= ReadLineCheckInt();
+            int uprava= ReadLineCheckNum<int>();
             Console.WriteLine("Zadej novy vstup.");
             string novyVstup = ReadLineCheck();
             switch (uprava)
@@ -216,7 +242,8 @@ namespace TestOOP
 
             Console.Write("Zadej plat:");
             //double plat = Convert.ToDouble(Console.ReadLine());
-            double plat= ReadLineCheckDouble();
+            //double plat= ReadLineCheckDouble();
+            double plat= ReadLineCheckNum<double>();
 
             Console.Write("Zadej nazev pracovni pozice:");
             string pracovniPozice = ReadLineCheck();
@@ -237,7 +264,8 @@ namespace TestOOP
             Console.WriteLine("Vyber index zamestnance kteryho chces smazat.");
             //int index = Convert.ToInt32(Console.ReadLine());
             //int index = int.TryParse(ReadLineCheck(), out index) ? index : 0;
-            int index= ReadLineCheckInt();
+            //int index= ReadLineCheckInt();
+            int index= ReadLineCheckNum<int>();
             //zoo.SmazatZvire(index - 1);
             SmazatZamestnance(index - 1);
         }
@@ -264,7 +292,8 @@ namespace TestOOP
             VypisZamestnancu();
             Console.WriteLine("Data u ktereho zamestnance chces zmenit. Vyber index");
             //int index = Convert.ToInt32(Console.ReadLine());
-            int index= ReadLineCheckInt();
+            //int index= ReadLineCheckInt();
+            int index= ReadLineCheckNum<int>();
             Zamestnanec zamestnanec = VyberZamestnance(index);
             Console.WriteLine("Co chces upravit:");
             Console.WriteLine("\t1. jmeno");
@@ -274,7 +303,8 @@ namespace TestOOP
             Console.WriteLine("\t5. nazev pracovni pozice");
 
             //int uprava = Convert.ToInt32(Console.ReadLine());
-            int uprava= ReadLineCheckInt();
+            //int uprava= ReadLineCheckInt();
+            int uprava= ReadLineCheckNum<int>();
             Console.WriteLine("Zadej novy vstup.");
             string novyVstup = ReadLineCheck();
             switch (uprava)
