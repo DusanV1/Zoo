@@ -18,7 +18,7 @@ namespace TestOOP
 
 		public void VypisDatOZvireti()
 		{
-			//Console.WriteLine("Vypis dat o zvireti");
+			
 			Console.WriteLine($"\tNazev: {Nazev}");
             Console.WriteLine($"\tVek: {Vek}");
             Console.WriteLine($"\tVaha: {Vaha}");

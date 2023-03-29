@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        //bool corectInput = false;
+        
         int inputZver = 0;
         int inputZamestnanci = 0;
         int inputMain = 0;
@@ -19,8 +19,7 @@ class Program
             Console.WriteLine("\t2-databaze se zviraty");
             Console.WriteLine("\t3-ukoncit program");
 
-            //inputMain = Convert.ToInt32(Console.ReadLine());
-            //inputMain = Zoo.ReadLineCheckInt();
+            
             inputMain = Zoo.ReadLineCheckNum<int>();
 
             switch(inputMain)
@@ -37,8 +36,7 @@ class Program
                         Console.WriteLine("\t6-soucet mezd");
                         Console.WriteLine("\t7-prejit do hlavniho menu");
 
-                        //inputZamestnanci = Convert.ToInt32(Console.ReadLine());
-                        //inputZamestnanci= Zoo.ReadLineCheckInt();
+                        
                         inputZamestnanci=Zoo.ReadLineCheckNum<int>();
 
                         switch (inputZamestnanci)
@@ -80,20 +78,9 @@ class Program
                         Console.WriteLine("\t7-prejit do hlavniho menu");
 
 
-                        //if (int.TryParse(Console.ReadLine(), out inputZver))
-                        //{
-                        //    corectInput = true;
-                        //}
-                        //else
-                        //{
-                        //    Console.WriteLine("Spatne zadany vstup.");
-
-                        //};
-                        //inputZver = Zoo.ReadLineCheckInt();
                         inputZver=Zoo.ReadLineCheckNum<int>();
 
 
-                        //int index;
                         switch (inputZver)
                         {
                             case 1:
